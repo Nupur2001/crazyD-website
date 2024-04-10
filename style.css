@@ -193,6 +193,87 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+.banner-container .banner{
+    margin-top: 20rem;
+    flex: 1 1 40rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+.banner-container .banner .content{
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    transform: translateY(-50%);
+}
+
+.banner-container .banner .content h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.banner-container .banner .content p{
+    font-size: 2rem;
+    color: #333;
+}
+.banner-container .banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-container .banner:hover img{
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.heading{
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    padding: 1rem;
+    font-size: 3.5rem;
+}
+.heading span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+.category .box-container{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.category .box-container .box{
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+    flex: 1 1 25rem;
+}
+
+.category .box-container .box img{
+    width: 100%;
+    margin: 3rem 0;
+    /* height: 20rem; */
+}
+.category .box-container .box h3{
+    font-size: 3.5rem;
+    color: var(--black);
+}
+.category .box-container .box p{
+    font-size: 2rem;
+    color: #666;
+    padding: 5rem 0;
+}
+
+.category .box-container .btn {
+    display: block;
+}
+
+.category .box-container .bproduct{
+    height: 20rem;
+    width: 20rem;
+}
+
+
 
 
 /* media queries */
