@@ -20,6 +20,19 @@
     transition: all .2s linear;
 }
 
+/* Need Help Button */
+.help-btn{
+    background-color: black;
+    color: white;
+    padding: 16px 30px;
+    font-size: 16px;
+    border-radius: 40px;
+    border: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+
 /* Header Section */
 
 .logo {
@@ -490,8 +503,60 @@ body {
 }
 
 
+/* Footer Section */
+.footer .box-container{
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
 
+.footer .box-container .box{
+    padding: 1rem 0;
+    flex: 1 1 25rem;
+}
 
+.footer .box-container .box .share a{
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box p{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 0.7rem 0;
+}
+.footer .box-container .box .Links{
+    padding: 1rem 0;
+}
+.footer .box-container .box .Links a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    color: #333;
+}
+
+.footer .box-container .box .Links a:hover{
+    text-decoration: underline;
+    color: var(--green);
+}
+.footer .credit{
+    padding: 2.5rem 1rem;
+    border-top: .1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+}
+.footer .credit span{
+    color: var(--green);
+}
 
 
 /* Contact Page */
@@ -637,6 +702,106 @@ body {
     padding: 10px;
     font-size: 18px;
 }
+.contactForm .inputBox input[type="submit"]:hover{
+    background: var(--green);
+}
+
+
+/* About Us Page */
+/* About Us Section */
+
+.aboutSection{
+    background: url(Images/aboutImg.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    /* padding: 6.25rem 0; */
+    padding: 100px 0;
+}
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: var(--black);
+}
+.text{
+    font-size: 13px;
+    color: #333;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.features{
+    display: flex;
+    justify-content: space-between;
+    /* font-weight: 700; */
+    font-size: 1.4rem;
+    color: var(--black);
+}
+
+
+/* What we provide */
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f9f9f9;
+    /* background-color: #fcf7f7; */
+}
+
+.service-wrapper{
+    padding: 5% 8%;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-wrapper h1{
+    color: var(--black);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 80px;
+}
+.card{
+    height: 440px;
+    width: 370px;
+    padding: 3% 8%;
+    border: .5px solid var(--black);
+    border-radius: 8px;
+    display: flex;align-items: center;
+    flex-direction: column;
+}
+.card h2{
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.card p{
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.card img:hover{
+    transform: scale(0.5,0.6);
+}
 
 
 /* media queries */
@@ -644,6 +809,22 @@ body {
 @media(max-width:1200px) {
     html {
         font-size: 55%;
+    }
+    .inner-container{
+        padding: 80px;
+    }
+    .cards{
+        grid-template-columns: repeat(2 1fr);
+    }
+}
+
+@media(max-width:1000px) {
+    .aboutSection {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
     }
 }
 
@@ -693,7 +874,15 @@ body {
         font-size: 12px;
         transform: translateY(-27px);
     }
-
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card h1{
+        font-size: 4rem;
+    }
+    .inner-container h1{
+        font-size: 4rem;
+    }
 }
 
 @media(max-width:768px) {
@@ -757,6 +946,16 @@ body {
         font-size: 2.5rem;
     }
 }
+
+@media(max-width:600px){
+    .aboutSection{
+        padding: 0;
+    }
+    .inner-container{
+       padding: 60px;
+    }
+}
+
 
 @media(max-width:450px) {
     html {
