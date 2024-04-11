@@ -41,6 +41,7 @@ html {
 section {
     padding: 2rem 9%;
 }
+
 .header-1 {
     background: #eee;
     display: flex;
@@ -66,6 +67,9 @@ section {
 }
 
 .header-1 .search-box-container label {
+    margin-left: 0rem;
+    /* margin-right: -1rem; */
+    margin-top: 0rem;
     height: 100%;
     width: 8rem;
     font-size: 2.5rem;
@@ -303,14 +307,15 @@ body {
     overflow: hidden;
     position: relative;
 }
-.product .box-container .box .icons{
+
+.product .box-container .box .icons {
     position: absolute;
     display: block;
     top: 5rem;
     right: 1rem;
 }
 
-.product .box-container .box .icons a{
+.product .box-container .box .icons a {
     display: block;
     height: 4.5rem;
     width: 4.5rem;
@@ -322,37 +327,39 @@ body {
     margin-top: .7rem;
 }
 
-.product .box-container .box .icons a:hover{
+.product .box-container .box .icons a:hover {
     background: var(--green);
     color: #fff;
 }
-.product .box-container .box h3{
+
+.product .box-container .box h3 {
     color: var(--black);
     font-size: 2.5rem;
 }
 
-.product .box-container .box .stars i{
+.product .box-container .box .stars i {
     padding: 1rem .1rem;
     font-size: 1.7rem;
     color: gold;
 }
 
-.product .box-container .box .price{
+.product .box-container .box .price {
     font-size: 2rem;
     color: #333;
     padding: .5rem 0;
 }
-.product .box-container .box .price span{
+
+.product .box-container .box .price span {
     font-size: 2rem;
     color: #999;
     text-decoration: line-through;
 }
 
-.product .box-container .box img{
+.product .box-container .box img {
     height: 20rem;
 }
 
-.product .box-container .box .quantity{
+.product .box-container .box .quantity {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -360,11 +367,12 @@ body {
     padding-bottom: .5rem;
 }
 
-.product .box-container .box .quantity span{
+.product .box-container .box .quantity span {
     padding: 0.7rem;
     font-size: 1.7rem;
 }
-.product .box-container .box .quantity input{
+
+.product .box-container .box .quantity input {
     border: .1rem solid rgba(0, 0, 0, .3);
     font-size: 1.5rem;
     font-weight: bolder;
@@ -373,11 +381,12 @@ body {
     background: rgba(0, 0, 0, .05);
 
 }
-.product .box-container .box .btn{
+
+.product .box-container .box .btn {
     display: block;
 }
 
-.product .box-container .box .discount{
+.product .box-container .box .discount {
     position: absolute;
     top: 1rem;
     left: 1rem;
@@ -385,6 +394,248 @@ body {
     color: var(--green);
     padding: .7rem 1rem;
     font-size: 2rem;
+}
+
+
+/* Deal Section */
+
+.deal {
+    background: url(Images/deal\ banner.png);
+    background-position: center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.deal .content {
+    max-width: 50rem;
+}
+
+.deal .content .title {
+    font-size: 4rem;
+    color: var(--black);
+}
+
+.deal .content p {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: #333;
+}
+
+.deal .content .count-down {
+    display: flex;
+    gap: 1rem;
+    padding: 5rem 0;
+}
+
+.deal .content .count-down .box {
+    width: 9rem;
+    text-align: center;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+}
+
+.deal .content .count-down .box h3 {
+    color: var(--black);
+    background: #fff;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    font-size: 5rem;
+}
+
+.deal .content .count-down .box span {
+    display: block;
+    background: var(--black);
+    color: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+/* Newsletter Section */
+.space{
+    margin-top: 2rem;
+}
+.newsletter{
+    background: url(Images/newsletter\ banner.png);
+    background-position: center;
+    background-size: cover;
+    padding: 7rem 2rem;
+    text-align: center;
+
+}
+.newsletter h3{
+    font-size: 3rem;
+    color: var(--black);
+}
+.newsletter form{
+    max-width: 55rem;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, .1);
+}
+
+.newsletter form .box{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+}
+.newsletter form .btn{
+    margin-top: 0;
+}
+
+
+
+
+
+
+/* Contact Page */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: url(Images/nature\ photo1.jpg); */
+    background-size: cover;
+}
+
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.contact .content h3 {
+    font-weight: 700;
+    color: #666;
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    /* background: var(); */
+    background: #ede6e6;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.fa-solid,
+.fas {
+    margin-top: 17px;
+    margin-left: 22px;
+    font-weight: 900;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--black);
+
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #f2ecec;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBoxtextarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100%;
+    background: var(--black);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
 
 
@@ -415,6 +666,34 @@ body {
     .home .content h3 {
         font-size: 4rem;
     }
+
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .contactForm .inputBox input:focus~span,
+    .contactForm .inputBox input:valid~span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+
+    .contactForm .inputBox textarea:focus~span,
+    .contactForm .inputBox textarea:valid~span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-27px);
+    }
+
 }
 
 @media(max-width:768px) {
@@ -453,6 +732,30 @@ body {
         display: block;
     }
 
+
+    .deal {
+        background-position: left;
+    }
+
+    .deal .content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .deal .content .count-down {
+        justify-content: center;
+    }
+
+    .deal .content .count-down .box h3 {
+        font-size: 4rem;
+    }
+
+    .deal .content .count-down .box span {
+        font-size: 1.7rem;
+    }
+    .newsletter h3{
+        font-size: 2.5rem;
+    }
 }
 
 @media(max-width:450px) {
