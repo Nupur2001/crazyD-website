@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> &#x1F6CD; crazyD-Grocery Store</title>
+</head>
+<style>
+    :root {
+    --green: #27ae60;
+    --blue: #242661;
+    --black: #2c2c54;
+    --teal: #00b4bd;
+    --pink: #FAAF95;
+    --light_teal: #80DADE;
+    --red: #F45E3F;
+}
+
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: "Nunito Sans", sans-serif;
+    }
+    /* .contact{
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: url(Images/nature\ photo1.jpg);
+        background-size: cover;
+    }
+    .contact .content{
+        max-width: 800px;
+        text-align: center;
+    }
+    .contact .content h1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .contact .content p{
+        font-weight: 300;
+        color: #fff;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .container .contactInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contactInfo .box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    .container .contactInfo .box .icon{
+        min-width: 60px;
+        height: 60px;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+    .fa-solid, .fas {
+    margin-top: 17px;
+    margin-left: 22px;
+    font-weight: 900;
+}
+    .container .contactInfo .box .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    .container .contactInfo .box .text h3{
+        font-weight: 500;
+        color: #00bcd4;
+
+    }
+    .contactForm{
+        width: 40%;
+        padding: 40px;
+        background: #fff;
+    }
+    .contactForm h2{
+        font-size: 30px;
+        color: #333;
+        font-weight: 500;
+    }
+    .contactForm .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contactForm .inputBox input,.contactForm .inputBoxtextarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    .contactForm .inputBox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+    .contactForm .inputBox input:focus~ span,.contactForm .inputBox input:valid~ span,.contactForm .inputBox textarea:focus~ span,.contactForm .inputBox textarea:valid~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+    .contactForm .inputBox input[type="submit"]{
+        width: 100%;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    @media (max-width:991px){
+        .contact{
+            padding: 50px;
+        }
+        .container{
+            flex-direction: column;
+        }
+        .container .contactInfo{
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .contactForm .inputBox input:focus~ span,.contactForm .inputBox input:valid~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+    .contactForm .inputBox textarea:focus~ span,.contactForm .inputBox textarea:valid~ span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-27px);
+    }
+
+    } */
+
+</style>
+<body>
+        <!-- Header Section -->
+        <div class="header-1">
+            <a href=""><img class="logo" src="Images/CrazyD.png" alt=""></a>
+            <form action="" class="search-box-container">
+                <input type="search" id="search-box" placeholder="Search" >
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+        </div>
+        <div class="header-2">
+            <div id="menu-bar" class="fas fa-bars">
+    
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#category">Category</a>
+                <a href="#product">Product</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="">Deal</a>
+            </nav>
+            <div class="icons">
+                <a href="" class="fas fa-shopping-cart"></a>
+                <a href="" class="fas fa-heart"></a>
+                <a href="" class="fas fa-user-circle"></a>
+            </div>
+        </div>
+    <section class="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <h3>WE'D LOVE TO HEAR FROM YOU</h3>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Plot No.12, Road No. 11-D, S.No.19/3/1/1,<br> Kamal Park, Dhanori,<br> Pune, Maharashtra <br>411015</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p> 020 7117 9900</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>email</h3>
+                        <p> crazyD@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="">
+                    <h2>Send Messages</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" id="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" name="" id="" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type your query....</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send" >
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
