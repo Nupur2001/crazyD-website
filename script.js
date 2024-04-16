@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-let countDate = new Date('April 13, 2024 00:00:00').getTime();
+let countDate = new Date('April 23, 2024 00:00:00').getTime();
 
 function CountDown() {
     let now = new Date().getTime();
